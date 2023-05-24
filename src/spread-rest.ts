@@ -14,3 +14,4 @@ const heroScore = (...score: number[]): number =>{
 } 
 
 console.log(heroScore(1,2,3,4));
+
