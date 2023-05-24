@@ -7,3 +7,4 @@ const hero2: IHeroInterface ={
     name: "Sakib",
     age: 21,
 }
+
