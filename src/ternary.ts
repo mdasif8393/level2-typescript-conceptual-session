@@ -6,7 +6,7 @@ const checkAvailability = isHeroAvailable ? "Book now" : "You can not book";
 
 console.log(checkAvailability);
 
-//nullish operator
+//nullish operator (??)
 //check null and undefined
 
 /**

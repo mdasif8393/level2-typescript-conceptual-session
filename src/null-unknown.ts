@@ -19,3 +19,4 @@ const guessSomething = (myGuess: unknown): void => {
 guessSomething(23);
 guessSomething("Hello");
 guessSomething(null);
+
