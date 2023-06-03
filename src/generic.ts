@@ -41,13 +41,24 @@ const me:IMe<number, number> =  {
 }
 
 // keyof
+type test = "name" | "duration" | "category";
+const myTest:test = "duration"
+
 type MovieType = {
     name: string;
     duration: number;
     category: string;
 }
 
-type test = "name" | "duration" | "category";
-const myTest:test = "duration"
+type myMovieType = keyof MovieType; // "name" | "duration" | "category"
+const myTest1:myMovieType = "name";
 
-type myMovieType = keyof MovieType; // "name" | "Duration" | "category"
+const data:MovieType = {
+    name: "Agni 1",
+    duration: 360,
+    category: "Action",
+}
+
+const myText11:myMovieType = "name"
+console.log(data[myText11]);
+
