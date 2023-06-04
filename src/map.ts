@@ -6,19 +6,20 @@ type listOfFriend = {
     friend1: string;
     friend2: string;
     friend3: string;
-    friend4: string;
+    friend4: number;
 }
 
 type listOfFriendReadOnly = {
-    [key in keyof listOfFriend] : listOfFriend[key];
+    readonly [key in keyof listOfFriend] : listOfFriend[key];
+    //friend1: string;
+    //friend2: string;
+    //friend3: string;
+    //friend4: string;
 }
 
-const friendList: listOfFriend = {
+const friendList: listOfFriendReadOnly = {
     friend1: "AAA",
     friend2: "BBB",
     friend3: "CCC",
-    friend4: "DDD",
+    friend4: 54534,
 }
-
-friendList.friend1 = "sasass";
-console.log(friendList);
