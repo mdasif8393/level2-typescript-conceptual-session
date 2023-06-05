@@ -26,3 +26,25 @@ class Person1 {
         console.log(`Name: ${this.name} and Age: ${this.age}`);
     }
 }
+
+const p2 = new Person1("Fahim", 23);
+// console.log(p2); 
+
+class Person2 extends Person1 {
+    salary: number;
+    position: string;
+
+    constructor(name: string, age: number, salary: number, position: string){
+        super(name, age)
+        this.salary = salary;
+        this.position = position;
+    }
+
+    show(){
+        console.log(`Name: ${this.name} and Age: ${this.age}`);
+    }
+}
+
+const p3 = new Person2("Fahim", 23, 300000, "developer");
+console.log(p3.show()); 
+
